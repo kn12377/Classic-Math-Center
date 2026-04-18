@@ -117,7 +117,7 @@
           container.style.display = "block"
 
           var currentURL = new URL(window.location.href).searchParams
-          var demoRequired = currentURL.has("demo")
+          var demoRequired = currentURL.has("sonic")
 
           if (demoRequired) {
             demoLoader.style.display = "block"
@@ -132,7 +132,7 @@
 
             // the game url can be full or relative.
             // if full, the emulator will get the filename from it.
-            var gameURL = "cps1demo.zip"
+            var gameURL = "sonicgenesis.bin"
 
             // no fetch here because the entire project
             // is compatible with pre 2015 environments.
